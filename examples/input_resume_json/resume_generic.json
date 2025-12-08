@@ -1,0 +1,178 @@
+{
+    "selectedTemplate": 2,
+    "headings": {
+        "work": "Work Experience",
+        "education": "Education",
+        "projects": "Projects",
+        "skills": "Skills"
+    },
+    "basics": {
+        "name": "John Doe",
+        "email": "hidden@example.com",
+        "phone": "0000000000",
+        "linkedin": "anonymous",
+        "github": "anonymous",
+        "location": {
+            "address": "Location Hidden"
+        },
+        "summary": "Experienced data engineer with expertise in cloud data pipelines, ETL, and distributed data processing."
+    },
+    "education": [
+        {
+            "institution": "Anonymous University",
+            "location": "Unknown",
+            "area": "Computer Science",
+            "studyType": "Bachelor Degree",
+            "startDate": "Aug 2018",
+            "endDate": "Aug 2022",
+            "gpa": "N/A"
+        }
+    ],
+    "work": [
+        {
+            "position": "Data Engineer",
+            "website": "",
+            "highlights": [
+                "Managed large-scale data warehouses with optimized schemas and query performance.",
+                "Reduced cloud data processing costs through architecture redesign and resource optimization.",
+                "Built automated ETL pipelines powering analytics and production workloads.",
+                "Processed and updated large datasets using distributed compute tools.",
+                "Improved data reliability by refactoring ingestion and transformation logic.",
+                "Debugged complex data flow issues and improved pipeline stability."
+            ],
+            "company": "Company A",
+            "location": "Remote",
+            "startDate": "Oct, 2024",
+            "endDate": "Nov, 2025"
+        },
+        {
+            "highlights": [
+                "Automated recurring data workflows at scale.",
+                "Built ingestion systems supporting structured and semi-structured data formats.",
+                "Optimized large dataset processing reducing runtime significantly.",
+                "Enabled insights and reporting by consolidating disparate data systems."
+            ],
+            "company": "Company B",
+            "position": "Assistant Manager (Data Engineering)",
+            "location": "Unknown",
+            "startDate": "Jan, 2024",
+            "endDate": "Oct, 2024"
+        },
+        {
+            "highlights": [
+                "Developed real-time visualization tools for scientific or analytical data.",
+                "Improved custom RPC communication layers for distributed processing.",
+                "Modernized legacy codebases improving maintainability.",
+                "Resolved complex algorithmic or mathematical calculation issues."
+            ],
+            "position": "Full-Stack Software Engineer",
+            "company": "Company C",
+            "location": "Unknown",
+            "startDate": "Oct 2022",
+            "endDate": "Jan 2024"
+        },
+        {
+            "company": "Startup X",
+            "position": "Founding Software Engineer",
+            "location": "Unknown",
+            "startDate": "Dec 2020",
+            "endDate": "Jul 2022",
+            "highlights": [
+                "Built ingestion systems processing financial or high-frequency market data.",
+                "Integrated multiple third-party APIs with high availability requirements.",
+                "Developed backtesting infrastructure for historical data.",
+                "Designed algorithmic trading logic using Python and numerical libraries.",
+                "Led a small engineering team in a reliability-critical environment."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "keywords": [
+                "Python",
+                "SQL",
+                "JavaScript",
+                "Shell Scripting"
+            ],
+            "name": "Programming Languages"
+        },
+        {
+            "keywords": [
+                "Data Warehousing",
+                "ETL",
+                "Orchestration",
+                "Spark",
+                "Reverse ETL",
+                "Streaming Systems"
+            ],
+            "name": "Data Engineering & Warehousing"
+        },
+        {
+            "keywords": [
+                "GCP",
+                "AWS"
+            ],
+            "name": "Cloud Platforms"
+        },
+        {
+            "keywords": [
+                "PostgreSQL",
+                "MySQL",
+                "MongoDB",
+                "ElasticSearch",
+                "Redis",
+                "RabbitMQ"
+            ],
+            "name": "Databases & Streaming"
+        },
+        {
+            "keywords": [
+                "Docker",
+                "Kubernetes",
+                "Git",
+                "CI/CD"
+            ],
+            "name": "Infrastructure & DevOps"
+        },
+        {
+            "keywords": [
+                "FastAPI",
+                "Django",
+                "Flask",
+                "Monitoring"
+            ],
+            "name": "Web Frameworks & Monitoring"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Open Source Contribution",
+            "keywords": [
+                "Python",
+                "Django",
+                "REST API",
+                "Testing",
+                "Open Source"
+            ],
+            "description": "Resolved a backend issue in a widely used authentication library.",
+            "url": "https://example.com/project"
+        }
+    ],
+    "awards": [
+        {
+            "title": "",
+            "date": "",
+            "awarder": "",
+            "summary": ""
+        }
+    ],
+    "sections": [
+        "templates",
+        "profile",
+        "work",
+        "projects",
+        "skills",
+        "awards",
+        "education"
+    ]
+}
