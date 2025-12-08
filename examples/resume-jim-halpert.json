@@ -1,0 +1,137 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "work": "Work Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "basics": {
+    "name": "Jim Halpert",
+    "email": "jim.halpert@dundermifflin.com",
+    "phone": "555-0199",
+    "linkedin": "jim-halpert",
+    "github": "jim-h",
+    "location": {
+      "address": "Scranton, Pennsylvania"
+    },
+    "summary": "Sales professional with a strong track record of building client relationships, driving regional revenue growth, and improving team collaboration. Known for creative problem-solving, mentoring colleagues, and contributing to process improvements that boost overall office performance."
+  },
+  "education": [
+    {
+      "institution": "University of Scranton",
+      "location": "Scranton, PA",
+      "area": "Business Administration",
+      "studyType": "Bachelor of Arts",
+      "startDate": "Sep 1997",
+      "endDate": "May 2001",
+      "gpa": "3.4"
+    }
+  ],
+  "work": [
+    {
+      "position": "Co-Manager / Senior Sales Representative",
+      "website": "",
+      "endDate": "Present",
+      "highlights": [
+        "Increased regional paper sales by 18% YoY through targeted outreach and retention strategies.",
+        "Managed Scranton branch operations alongside co-manager, improving team productivity by 12%.",
+        "Developed long-term enterprise accounts, including key corporate partnerships boosting quarterly revenue.",
+        "Introduced workflow improvements that reduced order processing time by 30%."
+      ],
+      "company": "Dunder Mifflin Paper Company",
+      "location": "Scranton, PA",
+      "startDate": "Jan 2006"
+    },
+    {
+      "position": "Account Manager",
+      "company": "Staples (Corporate Sales Division)",
+      "location": "New York, NY",
+      "startDate": "Aug 2004",
+      "endDate": "Dec 2005",
+      "highlights": [
+        "Managed 120+ B2B accounts with a focus on client retention and product upselling.",
+        "Exceeded quarterly quota by 15% for four consecutive quarters.",
+        "Collaborated with marketing to refine product placement strategies for large enterprise clients."
+      ]
+    },
+    {
+      "position": "Assistant Regional Sales Associate",
+      "company": "Dunder Mifflin Paper Company",
+      "location": "Scranton, PA",
+      "startDate": "Jun 2001",
+      "endDate": "Jul 2004",
+      "highlights": [
+        "Maintained top-3 sales ranking in the branch for two consecutive years.",
+        "Strengthened customer relationships resulting in a 95% client retention rate.",
+        "Implemented a simple CRM tracking sheet that helped the team streamline follow-ups."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Sales & Business Development",
+      "keywords": [
+        "Client Relationship Management",
+        "Lead Generation",
+        "Negotiation",
+        "Account Growth"
+      ]
+    },
+    {
+      "name": "Office & Productivity",
+      "keywords": [
+        "Microsoft Excel",
+        "CRM Tools",
+        "Process Optimization",
+        "Time Management"
+      ]
+    },
+    {
+      "name": "Leadership & Collaboration",
+      "keywords": [
+        "Team Mentoring",
+        "Conflict Resolution",
+        "Cross-Team Coordination"
+      ]
+    },
+    {
+      "name": "Creative Work",
+      "keywords": [
+        "Practical Jokes",
+        "Photography",
+        "Event Planning"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Athlead (Startup Initiative)",
+      "keywords": [
+        "Sports Marketing",
+        "Business Development",
+        "Operations"
+      ],
+      "description": "Co-founded a sports marketing startup focused on athlete branding and youth sports engagement. Contributed to early stage client outreach and operational setup before transitioning to full-time roles.",
+      "url": "https://example.com/athlead"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Dunder Mifflin Top Salesperson Award",
+      "date": "2011",
+      "awarder": "Dunder Mifflin Corporate",
+      "summary": "Recognized for leading branch sales growth and maintaining outstanding client relationships."
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "projects",
+    "skills",
+    "awards",
+    "education"
+  ]
+}
+
