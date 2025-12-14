@@ -52,15 +52,25 @@ def download_tectonic_unix():
 
 
 def download_tectonic_windows():
-    download_command = [
-        "powershell",
-        "-Command",
-        "iwr -useb https://drop-sh.fullyjustified.net | iex",
-    ]
+    command_1 = "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072"
+    command_2 = "iex ((New-Object System.Net.WebClient).DownloadString('https://drop-ps1.fullyjustified.net'))"
+    full_command = f"{command_1}; {command_2}"
     # this will raise an exception if the command fails
-    subprocess.run(
-        " ".join(download_command), shell=True, check=True
-    ).check_returncode()
+    runner_process = subprocess.run(
+        ["powershell", "-Command", full_command],
+        check=True,
+    )
+    runner_process.check_returncode()
+    # Verify installation
+    if not check_tectonic_installed():
+        # show error message
+        _err_msg = (
+            (runner_process.stdout.decode() + "\n" + runner_process.stderr.decode())
+            if runner_process.stderr
+            else "Unknown error"
+        )
+        print(f"Error: {_err_msg}.", flush=True)
+        raise RuntimeError("Tectonic installation failed.")
 
 
 def setup_tectonic():
