@@ -19,6 +19,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{xcolor}
+\urlstyle{same} % Keeps the URL font the same as the body text
 % Compatibility shim for engines (tectonic) that lack \pdfglyphtounicode
 \providecommand\pdfglyphtounicode[2]{}
 % Original line follows (kept for reference):
@@ -116,7 +118,7 @@
 
 \begin{center}
     \textbf{\Huge \scshape {{ basics.name | latex_escape }}} \\ \vspace{1pt}
-    \small{
+    \small
     {%- if basics.phone -%}
       +91 {{ basics.phone | latex_escape }}
     {%- endif -%}
@@ -129,8 +131,20 @@
     {%- if basics.github -%}
       \;|\; {% raw %}\href{{% endraw %}https://github.com/{{ basics.github | latex_escape }}}{\underline{https://github.com/{{ basics.github | latex_escape }}}}
     {%- endif -%}
-    }
 \end{center}
+
+% ------- Alternative contact info format --------
+% \begin{center}
+%   \textbf{\Huge \scshape {{ basics.name | latex_escape }}} \\ \vspace{1pt}
+% \end{center}
+% \centerline{
+%     \small {
+%       +91 6296094352 \textbullet \ 
+%       \href{mailto:{{ basics.email | latex_escape }}}{{ basics.email | latex_escape }} \textbullet \ 
+%       \href{https://linkedin.com/in/{{ basics.linkedin | latex_escape }}}{linkedin.com/in/{{ basics.linkedin | latex_escape }}} \textbullet \ 
+%       \href{https://github.com/{{ basics.github | latex_escape }}}{github.com/{{ basics.github | latex_escape }}}
+%     }
+% }
 
 %-----------SUMMARY-----------
 {% if basics.summary %}
@@ -200,9 +214,11 @@
           \resumeItem{ {{ p.description | latex_escape }} }
         {% endif %}
       {% endif %}
-      {% if p.url %}\resumeItem{ URL: {% raw %}\href{{% endraw %}{{ p.url | latex_escape }}}{ {{ p.url | latex_escape }} } }{% endif %}
+      {% if p.url %}
+        \resumeItem{ Project link:\href{ {{ p.url | latex_escape }} }{ \color{blue} {{ p.url | latex_escape }} }}
+      {% endif %}
     \resumeItemListEnd
-  {% endif %}
+    {% endif %}
 {% endfor %}
 \resumeSubHeadingListEnd
 {% endif %}
