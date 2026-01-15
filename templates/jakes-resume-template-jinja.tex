@@ -116,18 +116,20 @@
 
 \begin{center}
     \textbf{\Huge \scshape {{ basics.name | latex_escape }}} \\ \vspace{1pt}
+    \small{
     {%- if basics.phone -%}
       +91 {{ basics.phone | latex_escape }}
     {%- endif -%}
     {%- if basics.email -%}
-      \;|\; {% raw %}\href{{% endraw %}mailto:{{ basics.email | latex_escape }}}{\underline{ {{ basics.email | latex_escape }}} }
+      \;|\; {% raw %}\href{{% endraw %}mailto:{{ basics.email | latex_escape }}}{\;\underline{\;{{ basics.email | latex_escape }}} }
     {%- endif -%}
     {%- if basics.linkedin -%}
-      \;|\; {% raw %}\href{{% endraw %}https://www.linkedin.com/in/{{ basics.linkedin | latex_escape }}/}{\underline{linkedin.com/in/{{ basics.linkedin | latex_escape }}/}}
+      \;|\; {% raw %}\href{{% endraw %}https://www.linkedin.com/in/{{ basics.linkedin | latex_escape }}/}{\underline{https://www.linkedin.com/in/{{ basics.linkedin | latex_escape }}/}}
     {%- endif -%}
     {%- if basics.github -%}
-      \;|\; {% raw %}\href{{% endraw %}https://github.com/{{ basics.github | latex_escape }}}{\underline{github.com/{{ basics.github | latex_escape }}}}
+      \;|\; {% raw %}\href{{% endraw %}https://github.com/{{ basics.github | latex_escape }}}{\underline{https://github.com/{{ basics.github | latex_escape }}}}
     {%- endif -%}
+    }
 \end{center}
 
 %-----------SUMMARY-----------
